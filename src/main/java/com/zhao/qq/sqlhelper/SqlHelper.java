@@ -47,10 +47,6 @@ public class SqlHelper
         {
             ex.fillInStackTrace();
         }
-        finally
-        {
-            try{statement.close();connection.close();}catch (Exception ex){ex.fillInStackTrace();}
-        }
         return null;
     }
 
